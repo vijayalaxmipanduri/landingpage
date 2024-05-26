@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body{
+      background-image: url(https://tse2.mm.bing.net/th?id=OIP.aVtfigX2nC5O2Q5b63VfTQHaEo&pid=Api&P=0&h=180);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100%;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial scale=1.0">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css"/>
+  <script>
+    const menuBtn=document.getElementById("menu-btn")
+    const navlinks=document.getElementById("nav-links");
+    const menuBtnIcon=menuBtn.querySelector("i");
+    menuBtnuBtn.addEventListener("click",(e)=>{
+                                               navlinks.classList.toggle("open");
+                                               const isOpen=navlinks.classList.contains("open");
+                                               menuBtnIcon.setAttribute("classc",isOpen?"ri-close-line":"ri-menu-line")
+                                              });
+    navlinks.addEventListener("click",(e)=>{
+                                            navlinks.classList.remove("open")
+                                            menuBtnIcon.setAttribute("class","ri-menu-line");
+                                           });
+    const scrollRevealOption = {
+                                distance: "50px",
+                                origin: "bottom",
+                                duration: 1000,
+                               };
+    scrollRevealOption().reveal(".container__left h1",{
+                                                         ...scrollRevealOption,
+                                                      });
+    scrollRevealOption().reveal(".container__left .container__btn",{
+                                                                    ...scrollRevealOption,
+                                                                    delay: 500,
+                                                                   });
+    scrollRevealOption().reveal(".container__right h4",{
+                                                        ...scrollRevealOption,
+                                                        delay: 2000,
+                                                        });
+    scrollRevealOption().reveal(".container__right h2",{
+                                                        ...scrollRevealOption,
+                                                        delay: 2500,
+                                                       });
+    scrollRevealOption().reveal(".container__right h3",{
+                                                        ...scrollRevealOption,
+                                                        delay: 3000,
+                                                      });
+    scrollRevealOption().reveal(".container__right p",{
+                                                       ...scrollRevealOption,
+                                                       delay: 3500,
+                                                      });
+    scrollRevealOption().reveal(".container__right .tent1",{
+                                                             duration: 1000,
+                                                             delay: 4000,
+                                                           });
+    scrollRevealOption().reveal(".container__right .tent2",{
+                                                            duration: 1000,
+                                                            delay: 4500,
+                                                           });
+    scrollRevealOption().reveal(".location",{
+                                              ...scrollRevealOption,
+                                              origin: "left",
+                                              delay: 5000,
+                                            });
+    scrollRevealOption().reveal(".socials span",{
+                                                 ...scrollRevealOption,
+                                                 origin: "top",
+                                                 delay: 5500,
+                                                 interval: 5000
+                                                });
+
+
+  </script>
+  <title>Web Design mastery|camp</title>
+</head>
+<body>
+ <nav>
+   <div class="nav__header">
+     <div clas="nav__logo">
+       <a href="#">camp</a>
+     </div>
+    <div class="nav__memu__btn" id="menu-btn">
+      <i class="ri-menu-line"></i>
+    </div>
+   </div>
+   <ul class="nav__links" id="nav-links">
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">ABOUT US</a></li>
+    <li><a href="#">CONTACT</a></li>
+   </ul>
+  <div class="nav__btns">
+   <button class="btn"><i class="ri-search-line"></i></button>
+   <button class="btn"><i class="ri-shopping-bag-line"></i></button>
+  </div>
+ </nav>
+ <div class="container">
+ <div class="container__left">
+ <h1>Enjoy Your Holiday</h1>
+ <div class="container__btn">
+ <button class="btn">BOOK NOW</button>
+ </div>
+ </div>
+ <div class="container__right">
+  <div class="images">
+    <img src="https://tse4.mm.bing.net/th?id=OIP.UdJ6I5at8Ptzn5DwJXCxSQHaE0&pid=Api&P=0&h=180" alt="tent1" class="tent1"/>
+    <img src="https://tse3.mm.bing.net/th?id=OIP.APdU2P7qmfqsAMOqoz-YMAHaE8&pid=Api&P=0&h=180" alt="tent2" class="tent2"/>
+  </div>
+ <div class="content">
+  <h4>12m2|2beds</h4>
+  <h2>BASIC TENT</h2>
+  <h3>Your Camping Exprence</h3>
+  <p> Designed for those who appereciate the fundamental joys of camping 
+      our selection of basic tents offers comfort and reliability without unnecessary frills.
+  </p>
+  </div>
+  </div>
+  <div class ="location">
+    <span><i class="ri-map-pin-2-fill"></i></span>
+    OUR LOCATION
+  </div>
+  <div class="socials">
+    <span> 
+      <a href="#"><i class="ri-facebook-fill"></i></a>
+    </span>
+    <span> 
+      <a href="#"><i class="ri-instagram-line"></i></a>
+    </span>
+    <span> 
+      <a href="#"><i class="ri-twitter-fill"></i></a>
+    </span>
+  </div>
+ </div>
+ <script src="https://unpkg.com/scrollreveal"></script>
+ <script scr="main.js"></script>
+</body>
+</html>
+
